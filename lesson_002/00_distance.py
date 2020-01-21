@@ -16,8 +16,20 @@ distances = {}
 
 # TODO здесь заполнение словаря
 
+distances=dict()
+moscow = sites['Moscow']
+london = sites['London']
+paris = sites['Paris']
+moscow_london = ((moscow[0]-london[0])**2 + (moscow[1]-london[1])**2)** .5
+moscow_paris = ((moscow[0]-paris[0])**2 + (moscow[1]-paris[1])**2)** .5
+london_paris = ((london[0]-paris[0])**2 + (london[1]-paris[1])**2)** .5
+distances['Moscow']={}
+distances['Moscow'] ['London']= moscow_london
+distances['Moscow'] ['Paris']= moscow_paris
+distances['London']={}
+distances['Moscow'] ['London']= moscow_london
+distances['London'] ['Paris']= moscow_paris
+distances['Paris']={}
+distances['Paris'] ['London']= moscow_london
+distances['Moscow'] ['Paris']= moscow_paris
 print(distances)
-
-
-
-
