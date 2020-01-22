@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 # Есть значение радиуса круга
-radius = 42
+radius = 42.0
 
 # Выведите на консоль значение прощади этого круга с точностю до 4-х знаков после запятой
 # подсказки:
@@ -23,25 +23,29 @@ point = (23, 34)
 # подсказки:
 #       нужно определить расстояние от этой точки до начала координат (0, 0)
 #       формула так же есть в интернете
-#       квадратный корень - это возведение в степень 0.5
+# #       квадратный корень - это возведение в степень 0.5
 #       операции сравнения дают булевы константы True и False
 # TODO здесь ваш код
-start=(0,0)
-x=point[0]
-y=point[1]
-start_point=(x**2+y**2)*.5
-print(start_point == ploshad)
+start=(0.0,0.0)
+x_point=point[0]
+y_point=point[1]
+x_start=start[0]
+y_start=start[1]
+point_start=((x_point-x_start)**2+(y_point-y_start)**2)**.5
+print(point_start <= radius)
 
 # Аналогично для другой точки
-point_2 = (30, 30)
+point_2 = (30.0, 30.0)
 # Если точка point_2 лежит внутри круга (radius = 42), то выведите на консоль True,
 # Или False, если точка лежит вовне круга.
 # TODO здесь ваш код
-start_2=(0,0)
-x_2=point_2[0]
-y_2=point_2[1]
-start_point_2=(x_2**2+y_2**2)*.5
-print(start_point_2 == ploshad)
+start_2=(0.0,0.0)
+x_point_2=point_2[0]
+y_point_2=point_2[1]
+x_start_2=start_2[0]
+y_start_2=start_2[1]
+point_start_2=((x_point_2-x_start_2)**2+(y_point_2-y_start_2)**2)**.5
+print(point_start_2 <= radius)
 # Пример вывода на консоль:
 #
 # 77777.7777
