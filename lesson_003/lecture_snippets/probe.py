@@ -1,11 +1,11 @@
-print('дратути!')
-my_family_height = [
-    ['мама', 168],
-    ['папа', 186],
-    ['я', 200],
-]
-total_height = my_family_height[0][1]
-total_height += my_family_height[1][1]
-total_height += my_family_height[2][1]
-print('Общий рост моей семьи', total_height)
-print('дотвидания!')
+x = input("Enter 4 or 5  ___ ")
+if x == "4":
+    print('Go back')
+elif x == "5":
+    print("you lucky")
+else:
+    print("Game over")
+
+
+
+
