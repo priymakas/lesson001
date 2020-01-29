@@ -1,11 +1,12 @@
-x = input("Enter 4 or 5  ___ ")
-if x == "4":
-    print('Go back')
-elif x == "5":
-    print("you lucky")
-else:
-    print("Game over")
-
-
-
-
+x = []
+while x == "4" or "5":
+   x = input("Угадай число  ___ ")
+   if x == "4":
+      print("Удача")
+      break
+   elif x == "5":
+      print("Умничка")
+      break
+   else:
+      print("Не-а")
+print("Ты ввела правильное число и это  " + x)
