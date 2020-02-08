@@ -12,3 +12,14 @@
 educational_grant, expenses = 10000, 12000
 
 # TODO здесь ваш код
+count_months = 0
+first_month = expenses - educational_grant
+result = [first_month]
+while expenses < (expenses + expenses * 0.03):
+    expenses = expenses + expenses * 0.03
+    balance = expenses - educational_grant
+    result.append(balance)
+    count_months += 1
+    if count_months >= 9:
+        print("Студенту надо попросить "+ str(round(sum(result),2)) + " рублей")
+        break
