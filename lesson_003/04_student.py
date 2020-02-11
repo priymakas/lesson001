@@ -21,5 +21,18 @@ while expenses < (expenses + expenses * 0.03):
     result.append(balance)
     count_months += 1
     if count_months >= 9:
+        print(result)
         print("Студенту надо попросить "+ str(round(sum(result),2)) + " рублей")
         break
+
+# income = educational_grant * 10
+# last_month_expense = expenses
+# outcome = expenses
+# index = 1
+# while index < 10:
+#     last_month_expense = last_month_expense * 1.03
+#     outcome += last_month_expense
+#     index += 1
+# print(outcome - income)
+# чужой код
+
