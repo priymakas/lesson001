@@ -47,9 +47,26 @@ store = {
 #     вывод на консоль количества и стоимости товара на складе
 
 # TODO здесь ваш код
+# for lamp in goods:
+#     if lamp == 'Лампа':
+#         print("Лампа " + str(store['12345'][0]['quantity']) + " шт" + " Общая стоимость " +
+#               str((store['12345'][0]['quantity'] * store['12345'][0]['price'])) + " руб")
+#         for desc in goods:
+#             if desc == 'Стол':
+#                 print(store['23456'][0]['quantity'] * store['23456'][0]['price'] + store['23456'][1]['quantity'] *
+#                       store['23456'][1]['price'] )
+#                 for seat in goods:
+#                     if seat == 'Диван':
+#                         print(store['34567'][0]['quantity'] * store['34567'][0]['price'] + store['34567'][1]['quantity']
+#                               * store['34567'][1]['price'])
+#                         for chear in goods:
+#                             if chear == 'Стул':
+#                                 print(store['45678'][0]['quantity'] * store['45678'][0]['price'] + store['45678'][1]
+#                                 ['quantity'] * store['45678'][1]['price'] + store['45678'][2]['quantity'] * store['45678'][2]['price'])
 
 
-
-
-
-
+for x in goods:
+    for y in store:
+        quantity = store[y]
+        price = store[y]
+        print(quantity,price)
